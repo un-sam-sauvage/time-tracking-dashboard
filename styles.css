@@ -1,0 +1,206 @@
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --self_care: hsl(43, 84%, 65%);
+    --social: hsl(264, 64%, 52%);
+    --very_dark_blue: hsl(226, 43%, 10%);
+    --dark_blue: hsl(235, 46%, 20%);
+    --desatured_blue: hsl(235, 45%, 61%);
+    --pale_blue: hsl(236, 100%, 87%);
+}
+
+h2,
+p {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-weight: 500;
+}
+span{
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--very_dark_blue);
+    padding: 15%
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "profile work play study"
+        "profile exercice social self-care";
+    gap: 4%;
+    margin: 0 auto;
+}
+
+.profile {
+    grid-area: profile;
+    background-color: var(--dark_blue);
+    border-radius: 15px;
+    width: 70%;
+    margin-left: 30%;
+}
+
+.profile img {
+    width: 5vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 8%;
+}
+
+.info-user {
+    margin: 0;
+    padding: 10% 10% 20%;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 10%;
+}
+
+.info-user p {
+    font-size: .7vw;
+    color: var(--pale_blue)
+}
+
+.info-user p {
+    margin: 0;
+}
+
+.info-user h1 {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.time {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--desatured_blue);
+}
+
+.timeframe {
+    margin-bottom: 8%;
+    font-size: 1vw;
+}
+
+.timeframe:hover {
+    color: white;
+}
+
+.activity {
+    background-color: var(--dark_blue);
+    border-radius: 15px;
+    padding: 0.1vw 1.2vw;
+    position: relative;
+}
+
+.activity:hover {
+    background-color: var(--desatured_blue);
+}
+
+.bgcolor svg {
+    position: absolute;
+    right: 0;
+    top: -1.2vh;
+
+}
+.title{
+    margin-bottom : 0;
+}
+.current-time {
+    display: block;
+    font-size: 2vw;
+    margin-bottom: 8%;
+    display: flex;
+}
+.previous-time{
+    font-size: .7vw;
+}
+.text{
+    margin-bottom: 8%;
+}
+
+.dot-menu {
+    color: grey;
+    position: absolute;
+    top: -10%;
+    right: 1vw;
+    font-size: 1.2vw;
+}
+
+.dot-menu:hover {
+    color: white;
+}
+
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+    position: relative;
+    border-radius: 15px;
+    padding-top: 6vh;
+    overflow: hidden;
+
+}
+
+.work {
+    grid-area: work;
+    background-image: linear-gradient(var(--work), var(--dark_blue));
+
+}
+
+.play {
+    grid-area: play;
+    background-image: linear-gradient(var(--play), var(--dark_blue));
+
+}
+
+.study {
+    grid-area: study;
+    background-image: linear-gradient(var(--study), var(--dark_blue));
+
+}
+
+.exercise {
+    grid-area: exercice;
+    background-image: linear-gradient(var(--exercise), var(--dark_blue));
+
+}
+
+.social {
+    grid-area: social;
+    background-image: linear-gradient(var(--social),  var(--dark_blue));
+
+}
+
+.self-care {
+    grid-area: self-care;
+    background-image: linear-gradient(var(--self_care), var(--dark_blue));
+
+}
+
+.text {
+    display: flex;
+    padding: 0 3%
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    font-size: 11px;
+    left: 45vw;
+    color: var(--pale_blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
