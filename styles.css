@@ -22,7 +22,13 @@ p {
 h2 {
     font-weight: 500;
 }
-
+button{
+    border : 0;
+    background: none;
+    font-family: "Rubik" , sans-serif;
+    color: var(--desatured_blue);
+    text-align: left;
+}
 
 body {
     background-color: var(--very_dark_blue);
@@ -89,7 +95,7 @@ body {
     font-size: 1vw;
 }
 
-.timeframe:hover {
+.timeframe:hover, .timeframe:focus{
     color: white;
 }
 
