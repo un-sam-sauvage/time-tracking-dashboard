@@ -18,12 +18,12 @@ p {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
-h2{
+
+h2 {
     font-weight: 500;
 }
-span{
-    font-family: 'Rubik', sans-serif;
-}
+
+
 body {
     background-color: var(--very_dark_blue);
     padding: 15%
@@ -110,20 +110,28 @@ body {
     top: -1.2vh;
 
 }
-.title{
-    margin-bottom : 0;
+
+.title {
+    margin-bottom: 0;
+    font-size: 1vw;
 }
+
 .current-time {
     display: block;
     font-size: 2vw;
     margin-bottom: 8%;
     display: flex;
 }
-.previous-time{
+
+.previous-time {
     font-size: .7vw;
+    color: var(--pale_blue);
 }
-.text{
+
+.text {
     margin-bottom: 8%;
+    display: flex;
+    padding: 0 3%
 }
 
 .dot-menu {
@@ -178,7 +186,7 @@ body {
 
 .social {
     grid-area: social;
-    background-image: linear-gradient(var(--social),  var(--dark_blue));
+    background-image: linear-gradient(var(--social), var(--dark_blue));
 
 }
 
@@ -188,19 +196,115 @@ body {
 
 }
 
-.text {
-    display: flex;
-    padding: 0 3%
-}
+
 
 .attribution {
-    position: absolute;
-    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
     font-size: 11px;
-    left: 45vw;
     color: var(--pale_blue);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 950px) {
+    body{
+        padding-top: 0;
+    }
+    .text {
+        width: 100%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
+    .text p {
+        display: flex;
+        justify-content: space-between;
+        margin: 1vh 0 2vh;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        width: 80%;
+        margin-left: 0;
+        margin: 2% 0;
+    }
+
+    .info-user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+        margin-bottom: 2%;
+    }
+
+    .info-text {
+        padding-top: 3%;
+    }
+
+    .profile img {
+        width: 10vw;
+        margin-bottom: 0;
+    }
+
+    .info-user p {
+        font-size: 1.5vw;
+    }
+
+    .info-user h1 {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    .time {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .timeframe {
+        margin-bottom: 0;
+        font-size: 2vw;
+    }
+
+    .activity {
+        padding-left: 2vw;
+    }
+
+    .work,
+    .play,
+    .study,
+    .exercise,
+    .social,
+    .self-care {
+        width: 80%;
+        margin: 2% 0;
+    }
+
+    .current-time {
+        font-size: 4vw;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .previous-time {
+        font-size: 2vw;
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .dot-menu {
+        font-size: 3vw;
+        right: 2vw;
+    }
+
 }
